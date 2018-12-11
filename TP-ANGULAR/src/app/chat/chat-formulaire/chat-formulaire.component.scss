@@ -1,0 +1,15 @@
+@import "../variables.scss";
+
+button {
+    &:hover {
+        background-color: $primary !important;
+    }
+
+    &:focus {
+        background-color: $dark !important;
+    }
+}
+
+.msg-form {
+    margin-top: 2vh !important;
+}

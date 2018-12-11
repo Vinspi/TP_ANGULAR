@@ -1,5 +1,5 @@
 <li>
-  {{ message.texte }} ({{ message.auteur }})
+  <span class="text-dark">{{ message.auteur }} </span> <small>{{ message.date | date: 'dd/MM/yyyy HH:mm:ss' }}</small>
   <br/>
-  <small>{{ message.date | date: 'dd/MM/yyyy HH:mm:ss' }}</small>
+  {{ message.texte }}
 </li>

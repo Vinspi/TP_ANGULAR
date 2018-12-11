@@ -1,3 +1,10 @@
-<label>Votre message:</label>
-<input type="text" name="message" [(ngModel)]="texte">
-<button type="button" (click)="envoyer()">envoyer</button>
+
+
+<div class="msg-form d-flex justify-content-center">
+    <div style="width: 30%;" class="p-2 bd-highlight">
+        <input type="text" class="form-control" id="msg" [(ngModel)]="texte" placeholder="Message">
+    </div>
+    <div class="p-2 bd-highlight">
+        <button type="button" class="btn bg-dark" (click)="envoyer()">envoyer</button>
+    </div>
+</div>

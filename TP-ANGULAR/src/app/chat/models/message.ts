@@ -7,8 +7,7 @@ constructor(data?: any) {
   if (data) {
       this.texte = data.body;
       this.auteur = data.title;
-      this.date = data.date ? data.date : new Date();
-      this.date = data.date;
+      this.date = new Date();
     }
   }
 }
