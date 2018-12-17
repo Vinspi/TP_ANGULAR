@@ -30,8 +30,11 @@ export class ChatService {
 
   public getMessages(): Observable<Array<Message>> {
     return new Observable<Array<Message>>((observer) => {
-      console.log("coucou");
-      this.http.get<Array<any>>('https://jsonplaceholder.typicode.com/posts')
+
+      /* change here if you want to retrieve data from the clssic API or from the node server */
+
+      //this.http.get<Array<any>>('https://jsonplaceholder.typicode.com/posts')
+      this.http.get<Array<any>>('http://localhost:8080/posts')
         .subscribe(
           (messages) => {
             console.log("i got a msg");
